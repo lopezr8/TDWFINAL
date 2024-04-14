@@ -18,6 +18,7 @@ export class NavbarComponent {
 
   private toggleButton: any;
   private sidebarVisible: boolean;
+  private bandera: boolean = false;
 
     constructor(public location: Location, private element : ElementRef) {
         this.sidebarVisible = false;
@@ -26,6 +27,8 @@ export class NavbarComponent {
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        this.bandera = true;
+
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
@@ -57,7 +60,13 @@ export class NavbarComponent {
         }
     };
     isHome() {
+      if(this.bandera===true){
+        this.bandera = false;
+        return true;
+      }
+
       var titlee = this.location.prepareExternalUrl(this.location.path());
+
       if(titlee.charAt(0) === '#'){
           titlee = titlee.slice( 1 );
       }
