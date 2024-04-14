@@ -8,13 +8,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 import emailjs from '@emailjs/browser';
 import { BeutifulCountersComponent } from '../../components/beutifulCounters/beutifulCounters.component';
+import { ServiciosComponentComponent } from '../../components/serviciosComponent/serviciosComponent.component';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
     NgbModule,
-    BeutifulCountersComponent
+    BeutifulCountersComponent,
+    ServiciosComponentComponent
 
   ],
   styles: [`

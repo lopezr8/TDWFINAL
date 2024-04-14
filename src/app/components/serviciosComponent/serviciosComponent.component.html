@@ -1,0 +1,141 @@
+<div class="section section-dark" id="carousel" style="background-color: #241607; height: 650px; ">
+  <div class="container">
+      <div class="row">
+          <!-- Columna para el listado de servicios -->
+          <div class="col-md-4 text-center">
+              <h2 class="title animate__animated animate__backInDown">Mis servicios</h2>
+              <ul class="list-group">
+
+                  @defer (on timer( 2000 )) {
+                    <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInLeft "
+                    placement="right"
+                    ngbPopover="Los estucos son revestimientos decorativos ampliamente utilizados en la construcción para embellecer y proteger superficies interiores y exteriores de edificaciones. Se componen de una mezcla de materiales como yeso, cal, cemento, arcilla o resinas, combinados con agua y pigmentos según las necesidades estéticas y funcionales de cada proyecto."
+                    style="color: white">
+                        Estucos: Tradicional - plasticos - venecianos
+                     </button>
+                  }
+                   <br>
+                   @defer (on timer( 3000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInRight"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Pintura: Vinilo - Epoxica - Trafijo - Señalización
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 4000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInLeft"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Sistema de revoque en seco o estampillado
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 5000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInRight"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Paredes en panel de yeso - Fibrocemento PVC
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 6000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInLeft"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Entrepisos Fibrocemento
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 7000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInRight"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Aislamiento Acústico y Térmicos
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 8000 )) {
+
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInLeft"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Texturas Graniplast
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 9000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInRight"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Muros: Panel Yeso - Fibrocemento
+                     </button>
+                   }
+                   <br>
+                   @defer (on timer( 10000 )) {
+                     <button type="button"
+                    class="btn btn-outline-danger btn-round animate__animated animate__backInLeft"
+                    placement="right"
+                    popoverTitle="Holi" style="color: white">
+                    Trabajos en alturas
+                     </button>
+                   }
+                  <!-- Agrega más servicios según sea necesario -->
+              </ul>
+          </div>
+
+          <!-- Columna para el carrusel -->
+          <div class="col-md-8 d-flex align-items-center justify-content-center" style="padding-top: 40px;">
+              <div class="card page-carousel2">
+                  <ngb-carousel>
+                      <ng-template ngbSlide>
+                          <img src="../../assets/img/img004.jpeg" alt="Random first slide" style="height: 600px">
+
+                      </ng-template>
+                      <ng-template ngbSlide>
+                          <img src="../../assets/img/img006.jpeg" alt="Random second slide" style="height: 600px">
+
+                      </ng-template>
+                      <ng-template ngbSlide>
+                          <img src="../../assets/img/img007.jpeg" alt="Random third slide" style="height: 600px">
+
+                      </ng-template>
+                      <ng-template ngbSlide>
+                          <img src="../../assets/img/img008.jpeg" alt="Random third slide" style="height: 600px">
+
+                      </ng-template>
+                      <ng-template ngbSlide>
+                          <img src="../../assets/img/img010.jpeg" alt="Random third slide" style="height: 600px">
+
+                      </ng-template>
+                  </ngb-carousel>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<style>
+  /* Estilos CSS para el carrusel */
+  .page-carousel2 {
+
+      overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+      margin-left: -15px; /* Compensar el padding predeterminado de la rejilla de Bootstrap */
+      margin-right: -15px; /* Compensar el padding predeterminado de la rejilla de Bootstrap */
+      position: relative;
+      /* right: 100px; */
+      left: 170px;
+      /* align-items: center; */
+      /* right: 100px; */
+  }
+
+</style>
