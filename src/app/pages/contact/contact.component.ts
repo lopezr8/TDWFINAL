@@ -2,16 +2,17 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+// import { MapComponentComponent } from "../../components/map-component/map-component.component";
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule
-  ],
-  templateUrl: './contact.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-contact',
+    standalone: true,
+    templateUrl: './contact.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+    ]
 })
 export class ContactComponent {
   correo: string = '@'
